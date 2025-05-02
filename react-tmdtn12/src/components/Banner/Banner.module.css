@@ -1,0 +1,80 @@
+.banner {
+    background-image: url('../../assets/GrayMinimalistNewCollectionBanner.png'); /* Thêm đường dẫn ảnh banner */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    position: relative;
+    height: 90vh;
+  }
+  
+  .bannerContent {
+    position: absolute;
+    bottom: 30px; /* Đặt cách dưới 30px */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1;
+    padding: 0 15px; /* Đảm bảo nội dung không bị chạm biên */
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .ctaButton {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .ctaButton:hover {
+    background-color: #e65c50;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    .ctaButton {
+      font-size: 1rem;
+      padding: 12px 24px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .description {
+      font-size: 0.9rem;
+    }
+  
+    .ctaButton {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+  

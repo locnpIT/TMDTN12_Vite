@@ -1,0 +1,133 @@
+.mainFooter {
+    background-color: #f3f3f3;
+    color: #242424;
+    padding-top: 4rem;
+    font-size: 1.4rem;
+  }
+  
+  .footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 3rem;
+    padding: 0 4rem;
+  }
+  
+  .footerColumn {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footerHeading {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .aboutColumn p {
+    line-height: 1.7;
+    color: #262626;
+    font-size: 1.6rem;
+  }
+  
+  .footerLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footerLinks li {
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+  }
+  
+  .footerLinks a {
+    color: #262626;
+    transition: color 0.2s ease-in-out, padding-left 0.2s ease-in-out;
+  }
+  
+  .footerLinks a:hover {
+    color: #5b5b5b;
+    padding-left: 5px;
+  }
+  
+  .socialLinks {
+    margin-top: 1.5rem;
+  }
+  
+  .socialHeading {
+    font-size: 1.5rem;
+    color: #262626;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .socialIcon {
+    display: inline-block;
+    color: #262626;
+    border: 1px solid #4a5568;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 0.6rem;
+    font-size: 1.3rem;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+  
+  .socialIcon:hover {
+    background-color: #4a5568;
+    border-color: #718096;
+    color: #ffffff;
+  }
+  
+  .footerBottom {
+    background-color: #cecece;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .copyright {
+    font-size: 1.3rem;
+    color: #718096;
+  }
+
+  .logoColumn {
+    flex: 1;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footerLogo {
+    width: 30rem;
+    height: 10rem;
+    object-fit: cover;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .footerContent {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footerColumn {
+      min-width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    .socialLinks {
+      margin-top: 1rem;
+    }
+  }
+  

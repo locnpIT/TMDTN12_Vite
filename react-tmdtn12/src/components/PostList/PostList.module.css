@@ -1,0 +1,106 @@
+/* .section - Padding cho section, điều chỉnh lại cho màn hình nhỏ */
+.section {
+  padding: 4rem 10rem;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 3rem 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 3rem;
+  }
+}
+
+/* .title - Phong cách tiêu đề */
+.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+/* .list - Layout với grid, điều chỉnh để có responsive */
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* .item - Các bài viết */
+.item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* .thumbnail - Ảnh bài viết */
+.thumbnail {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* .content - Phần nội dung bài viết */
+.content {
+  padding: 1rem;
+}
+
+/* .postTitle - Tiêu đề bài viết */
+.postTitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: #262626;
+}
+
+/* .excerpt - Mô tả bài viết */
+.excerpt {
+  font-size: 1.4rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive cho việc chỉnh sửa font size */
+@media (max-width: 768px) {
+  .postTitle {
+    font-size: 1.4rem;
+  }
+
+  .excerpt {
+    font-size: 1.2rem;
+  }
+}
