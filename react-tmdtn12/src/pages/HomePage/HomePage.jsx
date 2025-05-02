@@ -9,7 +9,6 @@ export const HomePage = () => {
   return (
     <>
         <Header></Header>
-        {/* <AboutWebsite></AboutWebsite> */}
         <Banner></Banner>
         <LatestPosts></LatestPosts>
         <PostList title="Khám phá phong cách, phối đồ chuẩn gu"></PostList>

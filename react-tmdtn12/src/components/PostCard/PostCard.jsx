@@ -5,7 +5,7 @@ import styles from './PostCard.module.css';
 
 const PostCard = ({ post }) => {
   return (
-    <Link to={post.link} className={styles.postCard}>
+    <Link to={`/bai-viet/${post.id}`} className={styles.postCard}>
       <img src={post.image} alt={post.title} className={styles.thumbnail} />
       <div className={styles.postContent}>
         <h3 className={styles.postTitle}>{post.title}</h3>
